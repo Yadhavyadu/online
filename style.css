@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(111, 111, 116, 0.945);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    margin: 20px;
+    list-style: none;
+}
+.navbar ul li{
+    font-size: 15px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    padding: 40px;
+    color: rgb(255, 255, 255);
+    
+}
+.navbar ul li a:hover{
+    color: black;
+    text-shadow: 4px 6px 3px black;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(184, 180, 180, 0.295);
+    height: 850px;
+    justify-content: center;
+    align-items: center;
+    color:rgb(63, 61, 61);
+}
+#home::before{
+    content:"";
+    position: absolute;
+    background-image: url(https://cdn.pixabay.com/photo/2016/05/05/02/37/sunset-1373171__480.jpg);
+    height: 850px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+}
+.main{
+    border: 1px solid white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 20%;
+    top: 30%;
+}
+.btn{
+    padding: 10px 30px;
+    background-color: transparent;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: aquamarine;
+    box-shadow: 0 0 5px white,0 0 5px white,0 0 10px white,0 0 15px white;
+}
+/* about */
+#about{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 500px;
+    height: 400px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
